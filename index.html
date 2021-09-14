@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1829/1829589.png" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -15,6 +17,7 @@
 </head>
 
 <body>
+    <!-- header/cabeçalho -->
     <header>
         <div id="divLogo">
             <h1 id="c">C</h1>
@@ -25,19 +28,28 @@
 
         <h2 id="subtitleLogo">Seu quadro de inspirações</h2>
     </header>
+
+    <!-- main/parte principal da página -->
     <main>
+
+        <!-- div onde ficam todos os cards criados -->
         <div id="cards">
         </div>
 
+        <!-- botão que abre o formulário para adicionar cards -->
         <img src="./imgs/btnOpenForm.svg" id="btnAddCard" alt="Adicionar">
 
         <div id="extraDivFormAddCard" style="display: none;">
+
+            <!-- formulário para adicionar cards -->
             <div id="divFormAddCard">
                 <form id="formAddCard">
+
+                    <!-- botão para fechar formulário de adicionar cards -->
                     <img src="./imgs/btnCloseForm.svg" id="btnCloseForm" alt="">
 
-                    <fieldset>
-                        <legend>Inspirações</legend>
+                    <fieldset> <!-- linha em volta do formulário de adicionar cards -->
+                        <legend>Inspirações</legend> <!-- legenda escrita na linha em volta do formulário de adicionar cards -->
                         
                         <div id="inputsFormAddCard">
                             <label for="title">Título</label>
@@ -51,6 +63,7 @@
                                 placeholder="Escreva uma breve descrição">
                         </div>
 
+                        <!-- botão formulário para adicionar cards e limpar campos preenchidos -->
                         <div id="divBtnFormAddCard">
                             <button type="submit" id="submitFormAddCard">Adicionar</button>
                             <button type="reset" id="resetFormAddCard">Limpar</button>
@@ -61,13 +74,17 @@
         </div>
     </main>
     <footer>
+
+        <!-- botão que abre formulário de contato -->
         <button id="btnOpenContact"><img
             src="https://image.flaticon.com/icons/png/512/3885/3885190.png" class="imgsBtnsFooter" alt="">
             <p class="textBtnsFooter">Fale conosco</p>
         </button>
         <div id="extraDivFormContact" style="display: none;">
+
+            <!-- formulário de contato -->
             <div class="formContact" id="contact">
-                <form class="form-container">
+                <form>
                     <h2>Fale conosco</h2>
 
                     <label for="name"><b>Nome</b></label>
@@ -84,15 +101,17 @@
             </div>
         </div>
 
+        <!-- botão que abre equipe -->
         <button id="btnOpenTeam"><img
             src="https://image.flaticon.com/icons/png/512/1534/1534952.png" class="imgsBtnsFooter" alt="">
             <p class="textBtnsFooter">Equipe</p>
         </button>
         <div id="extraDivFormTeam" style="display: none;">
-            <div class="team" id="team">
-                <div class="form-container2">
-                    <h2>Equipe</h2>
 
+            <!-- equipe -->
+            <div class="team" id="team">
+                <div>
+                    <h2>Equipe</h2>
                     <ul>
                         <li>Ailla Freire</li>
                         <li>Carolina Hakamada</li>
@@ -106,6 +125,7 @@
         </div>
     </footer>
 
+    <!-- link com o arquivo onde tem o scrip js -->
     <script src="./js/main.js"></script>
 </body>
 

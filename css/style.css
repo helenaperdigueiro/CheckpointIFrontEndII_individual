@@ -1,10 +1,15 @@
+/* fizemos mobile first - o css principal foi feito para mobile e depois no media temos o css para telas maiores */
+
+/* importando a letra */
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Satisfy&display=swap');
 
+/* resentando os valores da página toda */
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
+/* setando valores para o html todo */
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -30,6 +35,7 @@ header {
   color: rgb(173, 232, 244);
 }
 
+/* início do logo */
 #divLogo {
   display: flex;
 }
@@ -53,6 +59,7 @@ h1 {
   font-weight: normal;
   color: rgb(202, 240, 248);
 }
+/* fim do logo */
 
 main {
   min-height: 50vh;
@@ -60,6 +67,7 @@ main {
   color: rgb(63, 63, 63);
 }
 
+/* início da div onde todos os cards estão */
 #cards {
   min-height: 75vh;
   margin: 1rem;
@@ -119,27 +127,10 @@ main {
   height: 100%;
   z-index: 3;
   padding: 0 7.5%;
-  /* animation: slideDown 0.4s; */
 }
+/* fim da div onde todos os cards estão */
 
-#extraDivFormContact {
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-#extraDivFormTeam {
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
+/* início das informações do formulário de adicionar cards */
 #divFormAddCard {
   position: fixed;
   z-index: 2;
@@ -247,6 +238,26 @@ fieldset legend {
   cursor: pointer;
   z-index: 2;
 }
+/* fim das informações do formulário de adicionar cards */
+
+/* início das informações do formulário de contato e equipe */
+#extraDivFormContact {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#extraDivFormTeam {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 
 #btnCloseForm {
   width: 1.2rem;
@@ -313,7 +324,7 @@ fieldset legend {
 }
 
 .formContact h2,
-.team h2{
+.team h2 {
   margin-bottom: 1rem;
 }
 
@@ -349,6 +360,9 @@ fieldset legend {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 0.5rem;
+}
+
+.formContact button:hover {
   box-shadow: 5px 5px 5px #aaaaaa;
 }
 
@@ -360,6 +374,7 @@ ul {
 .textBtnsFooter {
   display: none;
 }
+/* fim das informações do formulário de contato e equipe */
 
 footer {
   position: relative;
@@ -373,6 +388,7 @@ footer {
   background: rgb(3, 4, 94);
 }
 
+/* início das informações para responsividade */
 @media screen and (min-width: 280px) {
   #subtitle {
     font-size: 1.2rem;
@@ -448,3 +464,4 @@ footer {
     width: 40%;
   }
 }
+/* fim das informações para responsividade */
