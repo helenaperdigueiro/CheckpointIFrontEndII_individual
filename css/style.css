@@ -85,7 +85,7 @@ main {
   word-break: break-word;
 }
 
-.divBtnDeletePic {
+.divBtnDeleteCard {
   display: none;
   top: 0;
   left: 0;
@@ -96,7 +96,7 @@ main {
   height: 100%;
 }
 
-.btnDeletePic {
+.btnDeleteCard {
   max-width: 6rem;
   position: absolute;
   top: 50%;
@@ -104,28 +104,25 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.cardPicture {
-  border-radius: 1rem;
-}
-
 .cardPicture,
 .cardTitle,
 .cardDescription {
   width: 100%;
+  border-radius: 1rem;
 }
 
-#extraDivFormImgs {
+#extraDivFormAddCard {
   top: 0;
   left: 0;
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 3;
   padding: 0 7.5%;
   /* animation: slideDown 0.4s; */
 }
 
-#extraDivContact {
+#extraDivFormContact {
   top: 0;
   left: 0;
   position: fixed;
@@ -134,7 +131,7 @@ main {
   z-index: 1;
 }
 
-#extraDivTeam {
+#extraDivFormTeam {
   top: 0;
   left: 0;
   position: fixed;
@@ -142,6 +139,8 @@ main {
   height: 100%;
   z-index: 1;
 }
+
+/* parei aqui */
 
 #formImgs {
   position: fixed;
@@ -457,7 +456,7 @@ footer {
     width: 12rem;
   }
 
-  #extraDivFormImgs {
+  #extraDivFormAddCard {
     padding: 0 12.5%;
   }
 
@@ -467,7 +466,7 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-  #extraDivFormImgs {
+  #extraDivFormAddCard {
     padding: 0 20%;
   }
 
@@ -477,7 +476,7 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  #extraDivFormImgs {
+  #extraDivFormAddCard {
     padding: 0 30%;
   }
 

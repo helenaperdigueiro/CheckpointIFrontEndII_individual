@@ -2,33 +2,33 @@ let cards = document.getElementById("cards");
 let titleForm = document.getElementById("titleForm");
 let pictureForm = document.getElementById("pictureForm");
 let descriptionForm = document.getElementById("descriptionForm");
-let btnDeletePic = document.querySelectorAll("btnDeletePic");
+let btnDeleteCard = document.querySelectorAll("btnDeleteCard");
 
 let btnOpenForm = document.getElementById("btnAddCard");
 let btnCloseForm = document.getElementById("btnCloseForm");
-let extraDivFormImgs = document.getElementById("extraDivFormImgs");
+let extraDivFormAddCard = document.getElementById("extraDivFormAddCard");
 let formImgs = document.getElementById("formImgs");
 
 let submitForm = document.getElementById("submitFormAddCard");
 
 document.querySelector("form").onsubmit = function () { return false };
 
-let extraDivContact = document.getElementById("extraDivContact");
+let extraDivFormContact = document.getElementById("extraDivFormContact");
 let btnOpenContact = document.getElementById("btnOpenContact");
 
-let extraDivTeam = document.getElementById("extraDivTeam");
+let extraDivFormTeam = document.getElementById("extraDivFormTeam");
 let btnOpenTeam = document.getElementById("btnOpenTeam");
 
 btnOpenForm.onclick = function() {
-  if (extraDivFormImgs.style.display == "none") {
-    extraDivFormImgs.style.display = "block";
+  if (extraDivFormAddCard.style.display == "none") {
+    extraDivFormAddCard.style.display = "block";
   } else {
-    extraDivFormImgs.style.display = "none";
+    extraDivFormAddCard.style.display = "none";
   }
 }
 
 btnCloseForm.onclick = function() {
-  extraDivFormImgs.style.display = "none";
+  extraDivFormAddCard.style.display = "none";
 }
 
 submitForm.addEventListener("click", function () {
@@ -57,21 +57,21 @@ submitForm.addEventListener("click", function () {
     cardContent.innerHTML += `<img src="${pictureForm.value}" class="cardPicture">`;
     cardContent.innerHTML += `<h4 class="cardDescription">${descriptionForm.value}</h4>`;
 
-    let divBtnDeletePic = document.createElement("div");
-    divBtnDeletePic.setAttribute("class", "divBtnDeletePic");
-    card.appendChild(divBtnDeletePic);
+    let divBtnDeleteCard = document.createElement("div");
+    divBtnDeleteCard.setAttribute("class", "divBtnDeleteCard");
+    card.appendChild(divBtnDeleteCard);
 
-    let btnDeletePic = document.createElement("img");
-    btnDeletePic.setAttribute("src", "./imgs/btnDeletePic.svg");
-    btnDeletePic.setAttribute("class", "btnDeletePic");
-    divBtnDeletePic.appendChild(btnDeletePic);
-    btnDeletePic.addEventListener("click", function () { card.remove() });
+    let btnDeleteCard = document.createElement("img");
+    btnDeleteCard.setAttribute("src", "./imgs/btnDeleteCard.svg");
+    btnDeleteCard.setAttribute("class", "btnDeleteCard");
+    divBtnDeleteCard.appendChild(btnDeleteCard);
+    btnDeleteCard.addEventListener("click", function () { card.remove() });
 
     card.addEventListener("mouseover", function() {
-      divBtnDeletePic.style.display = "block";
+      divBtnDeleteCard.style.display = "block";
     })
     card.addEventListener("mouseout", function() {
-      divBtnDeletePic.style.display = "none";
+      divBtnDeleteCard.style.display = "none";
     })
 
     titleForm.focus();
@@ -86,27 +86,27 @@ submitForm.addEventListener("click", function () {
 
 
 btnOpenContact.onclick = function() {
-  if (extraDivContact.style.display == "none") {
-    extraDivContact.style.display = "block";
+  if (extraDivFormContact.style.display == "none") {
+    extraDivFormContact.style.display = "block";
   } else {
-    extraDivContact.style.display = "none";
+    extraDivFormContact.style.display = "none";
   }
 }
 
 btnOpenTeam.onclick = function() {
-  if (extraDivTeam.style.display == "none") {
-    extraDivTeam.style.display = "block";
+  if (extraDivFormTeam.style.display == "none") {
+    extraDivFormTeam.style.display = "block";
   } else {
-    extraDivTeam.style.display = "none";
+    extraDivFormTeam.style.display = "none";
   }
 }
 
 window.onclick = function(event) {
-  if (event.target == extraDivFormImgs) {
-    extraDivFormImgs.style.display = "none";
-  } if (event.target == extraDivContact) {
-    extraDivContact.style.display = "none";
-  } if (event.target == extraDivTeam) {
-    extraDivTeam.style.display = "none";
+  if (event.target == extraDivFormAddCard) {
+    extraDivFormAddCard.style.display = "none";
+  } if (event.target == extraDivFormContact) {
+    extraDivFormContact.style.display = "none";
+  } if (event.target == extraDivFormTeam) {
+    extraDivFormTeam.style.display = "none";
   }
 }
