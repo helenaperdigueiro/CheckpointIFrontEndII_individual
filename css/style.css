@@ -140,9 +140,7 @@ main {
   z-index: 1;
 }
 
-/* parei aqui */
-
-#formImgs {
+#divFormAddCard {
   position: fixed;
   z-index: 2;
   padding: 1rem;
@@ -193,17 +191,17 @@ fieldset {
   font-size: 12px;
 }
 
-#formAddCard {
-  display: flex;
-  flex-direction: column;
-}
-
 fieldset legend {
   margin-left: 1rem;
   padding: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
   color: rgb(3, 4, 94);
+}
+
+#formAddCard {
+  display: flex;
+  flex-direction: column;
 }
 
 #divBtnFormAddCard {
@@ -238,13 +236,10 @@ fieldset legend {
   }
 }
 
-/* imagens do botão de Contact e Team */
-.btnOp {
+.imgsBtnsFooter {
   width: 2rem;
 }
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-/* fale conosco botao */
 #btnOpenContact,
 #btnOpenTeam {
   display: grid;
@@ -267,7 +262,6 @@ fieldset legend {
   left: 1rem;
 }
 
-/* time botao */
 #btnOpenTeam {
   right: 1rem;
 }
@@ -277,9 +271,11 @@ fieldset legend {
   transform: scale(1.1);
 }
 
+/* parei aqui */
+
 /* The popup form - hidden by default */
 /* Pop-up - fale conosco formulario */
-.form-popup {
+.formContact {
   position: fixed;
   bottom: 11vh;
   left: 1rem;
@@ -288,7 +284,7 @@ fieldset legend {
 }
 
 /*  Pop-up - time formulario */
-.form-popup2 {
+.team {
   position: fixed;
   bottom: 11vh;
   right: 15px;
@@ -460,7 +456,7 @@ footer {
     padding: 0 12.5%;
   }
 
-  #formImgs {
+  #divFormAddCard {
     width: 75%;
   }
 }
@@ -470,7 +466,7 @@ footer {
     padding: 0 20%;
   }
 
-  #formImgs {
+  #divFormAddCard {
     width: 60%;
   }
 }
@@ -480,7 +476,7 @@ footer {
     padding: 0 30%;
   }
 
-  #formImgs {
+  #divFormAddCard {
     width: 40%;
   }
 }

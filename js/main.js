@@ -7,7 +7,7 @@ let btnDeleteCard = document.querySelectorAll("btnDeleteCard");
 let btnOpenForm = document.getElementById("btnAddCard");
 let btnCloseForm = document.getElementById("btnCloseForm");
 let extraDivFormAddCard = document.getElementById("extraDivFormAddCard");
-let formImgs = document.getElementById("formImgs");
+let divFormAddCard = document.getElementById("divFormAddCard");
 
 let submitForm = document.getElementById("submitFormAddCard");
 
