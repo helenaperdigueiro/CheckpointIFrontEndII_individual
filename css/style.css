@@ -271,30 +271,12 @@ fieldset legend {
   transform: scale(1.1);
 }
 
-/* parei aqui */
-
-/* The popup form - hidden by default */
-/* Pop-up - fale conosco formulario */
-.formContact {
-  position: fixed;
-  bottom: 11vh;
-  left: 1rem;
-  padding: 0;
-  z-index: 2;
-}
-
-/*  Pop-up - time formulario */
+.formContact,
 .team {
   position: fixed;
   bottom: 11vh;
-  right: 15px;
   padding: 0;
   z-index: 2;
-}
-
-/* Add styles to the form container */
-/* fale conosco */
-.form-container {
   max-width: 12.5rem;
   padding: 0.8rem;
   background-color: white;
@@ -303,23 +285,20 @@ fieldset legend {
   color: rgb(3, 4, 94);
 }
 
-.form-container h2 {
-  margin-bottom: 0.8rem;
+.formContact {
+  left: 1rem;
 }
 
-/* time */
-.form-container2 {
-  max-width: 12.5rem;
-  padding: 0.8rem;
-  background-color: white;
-  border: solid 1px rgb(104, 103, 103);
-  border-radius: 1rem;
-  color: rgb(3, 4, 94);
+.team {
+  right: 1rem;
 }
 
-.form-container2 h2 {
-  margin-bottom: 0.8rem;
+.formContact h2,
+.team h2{
+  margin-bottom: 1rem;
 }
+
+/* parei aqui */
 
 /* Full-width input fields */
 .form-container input[type=text],
