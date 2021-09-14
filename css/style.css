@@ -168,7 +168,7 @@ main {
 }
 
 #inputsFormAddCard input:hover,
-input:focus {
+#inputsFormAddCard input:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -236,6 +236,25 @@ fieldset legend {
   }
 }
 
+#btnAddCard {
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: fixed;
+  bottom: 1.5vh;
+  width: 3.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#btnCloseForm {
+  width: 1.2rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 0.5rem;
+}
+
 .imgsBtnsFooter {
   width: 2rem;
 }
@@ -298,12 +317,8 @@ fieldset legend {
   margin-bottom: 1rem;
 }
 
-/* parei aqui */
-
-/* Full-width input fields */
-.form-container input[type=text],
-.form-container input[type=email],
-.form-container textarea {
+.formContact input,
+.formContact textarea {
   width: 100%;
   padding: 10px;
   margin: 0.2rem 0 1rem 0;
@@ -317,13 +332,15 @@ fieldset legend {
   font-family: 'Roboto', sans-serif;
 }
 
-.form-container input:focus,
-.form-container textarea:focus {
+.formContact input:hover,
+.formContact input:focus,
+.formContact textarea:focus,
+.formContact textarea:hover {
   background-color: #ddd;
   outline: none;
 }
 
-.form-container .btn {
+.formContact button {
   background-color: rgb(3, 4, 94);
   color: white;
   padding: 10px 15px;
@@ -332,10 +349,6 @@ fieldset legend {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 0.5rem;
-}
-
-.form-container .btn:hover,
-.open-button:hover {
   box-shadow: 5px 5px 5px #aaaaaa;
 }
 
@@ -344,31 +357,7 @@ ul {
   padding: 0;
 }
 
-/* botão adicionar cards */
-#btnAddCard {
-  display: flex;
-  justify-content: center;
-  left: 50%;
-  transform: translate(-50%, 0);
-  /* left: 48.1%;
-  transform: translate(-51.9%, 0); nao apagar*/
-  /* margin: 0 0.5rem; nao apagar */
-  position: fixed;
-  bottom: 1.5vh;
-  /* bottom: 0.55rem; */
-  width: 3.5rem;
-  cursor: pointer;
-  z-index: 2;
-}
-
-#btnCloseForm {
-  width: 1.2rem;
-  cursor: pointer;
-  align-self: flex-end;
-  margin-right: 0.5rem;
-}
-
-.btnText {
+.textBtnsFooter {
   display: none;
 }
 
@@ -416,7 +405,7 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-  .btnText {
+  .textBtnsFooter {
     display: flex;
     align-self: center;
     justify-self: center;
